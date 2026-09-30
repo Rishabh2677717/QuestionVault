@@ -1,0 +1,26 @@
+package com.cracksemester.backend.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.Set;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class UserDTO {
+    private Long id;
+    private String name;
+    private String email;
+    private String branch;
+    private Integer semester;
+    private String role;
+    private Boolean enabled;
+    private String avatar;
+    private Long bookmarksCount;
+    private Long downloadsCount;
+    private String joinedDate;
+}
